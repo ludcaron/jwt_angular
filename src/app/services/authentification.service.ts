@@ -60,3 +60,4 @@ export class AuthentificationService {
     }
     return false;
   }
+}
