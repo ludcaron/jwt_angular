@@ -1,0 +1,15 @@
+<div class="row col-md-6">
+    
+    <div class="card card-default">
+        <div class="card-headind">New task</div>
+        <div class="card-body">
+            <form #f="ngForm" (ngSubmit)="onSaveTask(f.value)">
+                <div class="form-group">
+                    <label class="control-label">Task name : </label>
+                    <input type="text" class="form-control" name="taskName" ngModel="" required>
+                </div>
+                <button class="btn btn-danger" type="submit" [disabled]="!f.valid">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
